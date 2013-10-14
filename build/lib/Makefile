@@ -35,25 +35,19 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/greene/gnuradio/temp/gr-greene
+CMAKE_SOURCE_DIR = /home/iaa/gnuradio/gr-greene
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/greene/gnuradio/temp/gr-greene/build
+CMAKE_BINARY_DIR = /home/iaa/gnuradio/gr-greene/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,14 +117,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/greene/gnuradio/temp/gr-greene/build/CMakeFiles /home/greene/gnuradio/temp/gr-greene/build/lib/CMakeFiles/progress.marks
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/greene/gnuradio/temp/gr-greene/build/CMakeFiles 0
+	cd /home/iaa/gnuradio/gr-greene/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/gnuradio/gr-greene/build/CMakeFiles /home/iaa/gnuradio/gr-greene/build/lib/CMakeFiles/progress.marks
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/gnuradio/gr-greene/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -139,22 +133,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/iaa/gnuradio/gr-greene/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/CMakeFiles/gnuradio-greene.dir/rule:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/gnuradio-greene.dir/rule
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/gnuradio-greene.dir/rule
 .PHONY : lib/CMakeFiles/gnuradio-greene.dir/rule
 
 # Convenience name for target.
@@ -163,12 +157,12 @@ gnuradio-greene: lib/CMakeFiles/gnuradio-greene.dir/rule
 
 # fast build rule for target.
 gnuradio-greene/fast:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f lib/CMakeFiles/gnuradio-greene.dir/build.make lib/CMakeFiles/gnuradio-greene.dir/build
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f lib/CMakeFiles/gnuradio-greene.dir/build.make lib/CMakeFiles/gnuradio-greene.dir/build
 .PHONY : gnuradio-greene/fast
 
 # Convenience name for target.
 lib/CMakeFiles/test-greene.dir/rule:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/test-greene.dir/rule
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/test-greene.dir/rule
 .PHONY : lib/CMakeFiles/test-greene.dir/rule
 
 # Convenience name for target.
@@ -177,7 +171,7 @@ test-greene: lib/CMakeFiles/test-greene.dir/rule
 
 # fast build rule for target.
 test-greene/fast:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/build
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/build
 .PHONY : test-greene/fast
 
 findMax_vff_impl.o: findMax_vff_impl.cc.o
@@ -185,7 +179,7 @@ findMax_vff_impl.o: findMax_vff_impl.cc.o
 
 # target to build an object file
 findMax_vff_impl.cc.o:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f lib/CMakeFiles/gnuradio-greene.dir/build.make lib/CMakeFiles/gnuradio-greene.dir/findMax_vff_impl.cc.o
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f lib/CMakeFiles/gnuradio-greene.dir/build.make lib/CMakeFiles/gnuradio-greene.dir/findMax_vff_impl.cc.o
 .PHONY : findMax_vff_impl.cc.o
 
 findMax_vff_impl.i: findMax_vff_impl.cc.i
@@ -193,7 +187,7 @@ findMax_vff_impl.i: findMax_vff_impl.cc.i
 
 # target to preprocess a source file
 findMax_vff_impl.cc.i:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f lib/CMakeFiles/gnuradio-greene.dir/build.make lib/CMakeFiles/gnuradio-greene.dir/findMax_vff_impl.cc.i
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f lib/CMakeFiles/gnuradio-greene.dir/build.make lib/CMakeFiles/gnuradio-greene.dir/findMax_vff_impl.cc.i
 .PHONY : findMax_vff_impl.cc.i
 
 findMax_vff_impl.s: findMax_vff_impl.cc.s
@@ -201,7 +195,7 @@ findMax_vff_impl.s: findMax_vff_impl.cc.s
 
 # target to generate assembly for a file
 findMax_vff_impl.cc.s:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f lib/CMakeFiles/gnuradio-greene.dir/build.make lib/CMakeFiles/gnuradio-greene.dir/findMax_vff_impl.cc.s
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f lib/CMakeFiles/gnuradio-greene.dir/build.make lib/CMakeFiles/gnuradio-greene.dir/findMax_vff_impl.cc.s
 .PHONY : findMax_vff_impl.cc.s
 
 qa_greene.o: qa_greene.cc.o
@@ -209,7 +203,7 @@ qa_greene.o: qa_greene.cc.o
 
 # target to build an object file
 qa_greene.cc.o:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/qa_greene.cc.o
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/qa_greene.cc.o
 .PHONY : qa_greene.cc.o
 
 qa_greene.i: qa_greene.cc.i
@@ -217,7 +211,7 @@ qa_greene.i: qa_greene.cc.i
 
 # target to preprocess a source file
 qa_greene.cc.i:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/qa_greene.cc.i
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/qa_greene.cc.i
 .PHONY : qa_greene.cc.i
 
 qa_greene.s: qa_greene.cc.s
@@ -225,7 +219,7 @@ qa_greene.s: qa_greene.cc.s
 
 # target to generate assembly for a file
 qa_greene.cc.s:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/qa_greene.cc.s
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/qa_greene.cc.s
 .PHONY : qa_greene.cc.s
 
 test_greene.o: test_greene.cc.o
@@ -233,7 +227,7 @@ test_greene.o: test_greene.cc.o
 
 # target to build an object file
 test_greene.cc.o:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/test_greene.cc.o
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/test_greene.cc.o
 .PHONY : test_greene.cc.o
 
 test_greene.i: test_greene.cc.i
@@ -241,7 +235,7 @@ test_greene.i: test_greene.cc.i
 
 # target to preprocess a source file
 test_greene.cc.i:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/test_greene.cc.i
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/test_greene.cc.i
 .PHONY : test_greene.cc.i
 
 test_greene.s: test_greene.cc.s
@@ -249,7 +243,7 @@ test_greene.s: test_greene.cc.s
 
 # target to generate assembly for a file
 test_greene.cc.s:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/test_greene.cc.s
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f lib/CMakeFiles/test-greene.dir/build.make lib/CMakeFiles/test-greene.dir/test_greene.cc.s
 .PHONY : test_greene.cc.s
 
 # Help Target
@@ -287,6 +281,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/iaa/gnuradio/gr-greene/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -35,25 +35,19 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/greene/gnuradio/temp/gr-greene
+CMAKE_SOURCE_DIR = /home/iaa/gnuradio/gr-greene
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/greene/gnuradio/temp/gr-greene/build
+CMAKE_BINARY_DIR = /home/iaa/gnuradio/gr-greene/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,14 +117,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/greene/gnuradio/temp/gr-greene/build/CMakeFiles /home/greene/gnuradio/temp/gr-greene/build/swig/CMakeFiles/progress.marks
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/greene/gnuradio/temp/gr-greene/build/CMakeFiles 0
+	cd /home/iaa/gnuradio/gr-greene/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/gnuradio/gr-greene/build/CMakeFiles /home/iaa/gnuradio/gr-greene/build/swig/CMakeFiles/progress.marks
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/gnuradio/gr-greene/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/clean
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/clean
 .PHONY : clean
 
 # The main clean target
@@ -139,22 +133,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/preinstall
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/preinstall
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/iaa/gnuradio/gr-greene/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 swig/CMakeFiles/_greene_swig.dir/rule:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_greene_swig.dir/rule
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_greene_swig.dir/rule
 .PHONY : swig/CMakeFiles/_greene_swig.dir/rule
 
 # Convenience name for target.
@@ -163,12 +157,12 @@ _greene_swig: swig/CMakeFiles/_greene_swig.dir/rule
 
 # fast build rule for target.
 _greene_swig/fast:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig.dir/build.make swig/CMakeFiles/_greene_swig.dir/build
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig.dir/build.make swig/CMakeFiles/_greene_swig.dir/build
 .PHONY : _greene_swig/fast
 
 # Convenience name for target.
 swig/CMakeFiles/_greene_swig_doc_tag.dir/rule:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_greene_swig_doc_tag.dir/rule
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_greene_swig_doc_tag.dir/rule
 .PHONY : swig/CMakeFiles/_greene_swig_doc_tag.dir/rule
 
 # Convenience name for target.
@@ -177,12 +171,12 @@ _greene_swig_doc_tag: swig/CMakeFiles/_greene_swig_doc_tag.dir/rule
 
 # fast build rule for target.
 _greene_swig_doc_tag/fast:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_doc_tag.dir/build.make swig/CMakeFiles/_greene_swig_doc_tag.dir/build
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_doc_tag.dir/build.make swig/CMakeFiles/_greene_swig_doc_tag.dir/build
 .PHONY : _greene_swig_doc_tag/fast
 
 # Convenience name for target.
 swig/CMakeFiles/_greene_swig_swig_tag.dir/rule:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_greene_swig_swig_tag.dir/rule
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_greene_swig_swig_tag.dir/rule
 .PHONY : swig/CMakeFiles/_greene_swig_swig_tag.dir/rule
 
 # Convenience name for target.
@@ -191,29 +185,29 @@ _greene_swig_swig_tag: swig/CMakeFiles/_greene_swig_swig_tag.dir/rule
 
 # fast build rule for target.
 _greene_swig_swig_tag/fast:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_swig_tag.dir/build.make swig/CMakeFiles/_greene_swig_swig_tag.dir/build
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_swig_tag.dir/build.make swig/CMakeFiles/_greene_swig_swig_tag.dir/build
 .PHONY : _greene_swig_swig_tag/fast
 
 # Convenience name for target.
-swig/CMakeFiles/pygen_swig_8bef9.dir/rule:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/pygen_swig_8bef9.dir/rule
-.PHONY : swig/CMakeFiles/pygen_swig_8bef9.dir/rule
+swig/CMakeFiles/pygen_swig_bec90.dir/rule:
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/pygen_swig_bec90.dir/rule
+.PHONY : swig/CMakeFiles/pygen_swig_bec90.dir/rule
 
 # Convenience name for target.
-pygen_swig_8bef9: swig/CMakeFiles/pygen_swig_8bef9.dir/rule
-.PHONY : pygen_swig_8bef9
+pygen_swig_bec90: swig/CMakeFiles/pygen_swig_bec90.dir/rule
+.PHONY : pygen_swig_bec90
 
 # fast build rule for target.
-pygen_swig_8bef9/fast:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f swig/CMakeFiles/pygen_swig_8bef9.dir/build.make swig/CMakeFiles/pygen_swig_8bef9.dir/build
-.PHONY : pygen_swig_8bef9/fast
+pygen_swig_bec90/fast:
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f swig/CMakeFiles/pygen_swig_bec90.dir/build.make swig/CMakeFiles/pygen_swig_bec90.dir/build
+.PHONY : pygen_swig_bec90/fast
 
 _greene_swig_doc_tag.o: _greene_swig_doc_tag.cpp.o
 .PHONY : _greene_swig_doc_tag.o
 
 # target to build an object file
 _greene_swig_doc_tag.cpp.o:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_doc_tag.dir/build.make swig/CMakeFiles/_greene_swig_doc_tag.dir/_greene_swig_doc_tag.cpp.o
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_doc_tag.dir/build.make swig/CMakeFiles/_greene_swig_doc_tag.dir/_greene_swig_doc_tag.cpp.o
 .PHONY : _greene_swig_doc_tag.cpp.o
 
 _greene_swig_doc_tag.i: _greene_swig_doc_tag.cpp.i
@@ -221,7 +215,7 @@ _greene_swig_doc_tag.i: _greene_swig_doc_tag.cpp.i
 
 # target to preprocess a source file
 _greene_swig_doc_tag.cpp.i:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_doc_tag.dir/build.make swig/CMakeFiles/_greene_swig_doc_tag.dir/_greene_swig_doc_tag.cpp.i
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_doc_tag.dir/build.make swig/CMakeFiles/_greene_swig_doc_tag.dir/_greene_swig_doc_tag.cpp.i
 .PHONY : _greene_swig_doc_tag.cpp.i
 
 _greene_swig_doc_tag.s: _greene_swig_doc_tag.cpp.s
@@ -229,7 +223,7 @@ _greene_swig_doc_tag.s: _greene_swig_doc_tag.cpp.s
 
 # target to generate assembly for a file
 _greene_swig_doc_tag.cpp.s:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_doc_tag.dir/build.make swig/CMakeFiles/_greene_swig_doc_tag.dir/_greene_swig_doc_tag.cpp.s
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_doc_tag.dir/build.make swig/CMakeFiles/_greene_swig_doc_tag.dir/_greene_swig_doc_tag.cpp.s
 .PHONY : _greene_swig_doc_tag.cpp.s
 
 _greene_swig_swig_tag.o: _greene_swig_swig_tag.cpp.o
@@ -237,7 +231,7 @@ _greene_swig_swig_tag.o: _greene_swig_swig_tag.cpp.o
 
 # target to build an object file
 _greene_swig_swig_tag.cpp.o:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_swig_tag.dir/build.make swig/CMakeFiles/_greene_swig_swig_tag.dir/_greene_swig_swig_tag.cpp.o
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_swig_tag.dir/build.make swig/CMakeFiles/_greene_swig_swig_tag.dir/_greene_swig_swig_tag.cpp.o
 .PHONY : _greene_swig_swig_tag.cpp.o
 
 _greene_swig_swig_tag.i: _greene_swig_swig_tag.cpp.i
@@ -245,7 +239,7 @@ _greene_swig_swig_tag.i: _greene_swig_swig_tag.cpp.i
 
 # target to preprocess a source file
 _greene_swig_swig_tag.cpp.i:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_swig_tag.dir/build.make swig/CMakeFiles/_greene_swig_swig_tag.dir/_greene_swig_swig_tag.cpp.i
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_swig_tag.dir/build.make swig/CMakeFiles/_greene_swig_swig_tag.dir/_greene_swig_swig_tag.cpp.i
 .PHONY : _greene_swig_swig_tag.cpp.i
 
 _greene_swig_swig_tag.s: _greene_swig_swig_tag.cpp.s
@@ -253,7 +247,7 @@ _greene_swig_swig_tag.s: _greene_swig_swig_tag.cpp.s
 
 # target to generate assembly for a file
 _greene_swig_swig_tag.cpp.s:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_swig_tag.dir/build.make swig/CMakeFiles/_greene_swig_swig_tag.dir/_greene_swig_swig_tag.cpp.s
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig_swig_tag.dir/build.make swig/CMakeFiles/_greene_swig_swig_tag.dir/_greene_swig_swig_tag.cpp.s
 .PHONY : _greene_swig_swig_tag.cpp.s
 
 greene_swigPYTHON_wrap.o: greene_swigPYTHON_wrap.cxx.o
@@ -261,7 +255,7 @@ greene_swigPYTHON_wrap.o: greene_swigPYTHON_wrap.cxx.o
 
 # target to build an object file
 greene_swigPYTHON_wrap.cxx.o:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig.dir/build.make swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig.dir/build.make swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o
 .PHONY : greene_swigPYTHON_wrap.cxx.o
 
 greene_swigPYTHON_wrap.i: greene_swigPYTHON_wrap.cxx.i
@@ -269,7 +263,7 @@ greene_swigPYTHON_wrap.i: greene_swigPYTHON_wrap.cxx.i
 
 # target to preprocess a source file
 greene_swigPYTHON_wrap.cxx.i:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig.dir/build.make swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.i
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig.dir/build.make swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.i
 .PHONY : greene_swigPYTHON_wrap.cxx.i
 
 greene_swigPYTHON_wrap.s: greene_swigPYTHON_wrap.cxx.s
@@ -277,7 +271,7 @@ greene_swigPYTHON_wrap.s: greene_swigPYTHON_wrap.cxx.s
 
 # target to generate assembly for a file
 greene_swigPYTHON_wrap.cxx.s:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig.dir/build.make swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.s
+	cd /home/iaa/gnuradio/gr-greene/build && $(MAKE) -f swig/CMakeFiles/_greene_swig.dir/build.make swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.s
 .PHONY : greene_swigPYTHON_wrap.cxx.s
 
 # Help Target
@@ -294,7 +288,7 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... pygen_swig_8bef9"
+	@echo "... pygen_swig_bec90"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... _greene_swig_doc_tag.o"
@@ -317,6 +311,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/iaa/gnuradio/gr-greene/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

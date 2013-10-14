@@ -1,4 +1,4 @@
-# Install script for directory: /home/greene/gnuradio/temp/gr-greene/swig
+# Install script for directory: /home/iaa/gnuradio/gr-greene/swig
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/greene/_greene_swig.so"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/greene" TYPE MODULE FILES "/home/greene/gnuradio/temp/gr-greene/build/swig/_greene_swig.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/greene" TYPE MODULE FILES "/home/iaa/gnuradio/gr-greene/build/swig/_greene_swig.so")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/greene/_greene_swig.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/greene/_greene_swig.so")
     FILE(RPATH_REMOVE
@@ -51,20 +51,20 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/greene" TYPE FILE FILES "/home/greene/gnuradio/temp/gr-greene/build/swig/greene_swig.py")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/greene" TYPE FILE FILES "/home/iaa/gnuradio/gr-greene/build/swig/greene_swig.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/greene" TYPE FILE FILES
-    "/home/greene/gnuradio/temp/gr-greene/build/swig/greene_swig.pyc"
-    "/home/greene/gnuradio/temp/gr-greene/build/swig/greene_swig.pyo"
+    "/home/iaa/gnuradio/gr-greene/build/swig/greene_swig.pyc"
+    "/home/iaa/gnuradio/gr-greene/build/swig/greene_swig.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/greene/greene/swig" TYPE FILE FILES
-    "/home/greene/gnuradio/temp/gr-greene/swig/greene_swig.i"
-    "/home/greene/gnuradio/temp/gr-greene/build/swig/greene_swig_doc.i"
+    "/home/iaa/gnuradio/gr-greene/swig/greene_swig.i"
+    "/home/iaa/gnuradio/gr-greene/build/swig/greene_swig_doc.i"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

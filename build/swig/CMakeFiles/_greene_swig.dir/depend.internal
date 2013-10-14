@@ -4,7 +4,7 @@
 swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o
  ../include/greene/api.h
  ../include/greene/findMax_vff.h
- /home/greene/gnuradio/temp/gr-greene/build/swig/greene_swigPYTHON_wrap.cxx
+ /home/iaa/gnuradio/gr-greene/build/swig/greene_swigPYTHON_wrap.cxx
  /usr/include/python2.7/Python.h
  /usr/include/python2.7/abstract.h
  /usr/include/python2.7/boolobject.h

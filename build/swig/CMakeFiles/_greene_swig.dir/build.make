@@ -31,17 +31,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/greene/gnuradio/temp/gr-greene
+CMAKE_SOURCE_DIR = /home/iaa/gnuradio/gr-greene
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/greene/gnuradio/temp/gr-greene/build
+CMAKE_BINARY_DIR = /home/iaa/gnuradio/gr-greene/build
 
 # Include any dependencies generated for this target.
 include swig/CMakeFiles/_greene_swig.dir/depend.make
@@ -52,52 +46,19 @@ include swig/CMakeFiles/_greene_swig.dir/progress.make
 # Include the compile flags for this target's objects.
 include swig/CMakeFiles/_greene_swig.dir/flags.make
 
-swig/greene_swigPYTHON_wrap.cxx: /usr/local/include/gnuradio/swig/gnuradio.i
-swig/greene_swigPYTHON_wrap.cxx: /usr/local/include/gnuradio/swig/gr_extras.i
-swig/greene_swigPYTHON_wrap.cxx: ../swig/greene_swig.i
-swig/greene_swigPYTHON_wrap.cxx: /usr/local/include/gnuradio/swig/gr_shared_ptr.i
-swig/greene_swigPYTHON_wrap.cxx: /usr/local/include/gnuradio/swig/gnuradio_swig_bug_workaround.h
-swig/greene_swigPYTHON_wrap.cxx: /usr/local/include/gnuradio/swig/gr_types.i
-swig/greene_swigPYTHON_wrap.cxx: swig/greene_swig.tag
-swig/greene_swigPYTHON_wrap.cxx: ../swig/greene_swig.i
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/greene/gnuradio/temp/gr-greene/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
-	cd /home/greene/gnuradio/temp/gr-greene/build/swig && /usr/bin/cmake -E make_directory /home/greene/gnuradio/temp/gr-greene/build/swig
-	cd /home/greene/gnuradio/temp/gr-greene/build/swig && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module greene_swig -I/usr/local/include/gnuradio/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -I/usr/include/x86_64-linux-gnu/python2.7 -I/home/greene/gnuradio/temp/gr-greene/swig -I/home/greene/gnuradio/temp/gr-greene/build/swig -outdir /home/greene/gnuradio/temp/gr-greene/build/swig -c++ -I/home/greene/gnuradio/temp/gr-greene/lib -I/home/greene/gnuradio/temp/gr-greene/include -I/home/greene/gnuradio/temp/gr-greene/build/lib -I/home/greene/gnuradio/temp/gr-greene/build/include -I/usr/include -I/usr/include -I/usr/local/include -I/usr/local/include/gnuradio/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -I/usr/include/x86_64-linux-gnu/python2.7 -I/home/greene/gnuradio/temp/gr-greene/swig -I/home/greene/gnuradio/temp/gr-greene/build/swig -o /home/greene/gnuradio/temp/gr-greene/build/swig/greene_swigPYTHON_wrap.cxx /home/greene/gnuradio/temp/gr-greene/swig/greene_swig.i
-
-swig/greene_swig.py: swig/greene_swigPYTHON_wrap.cxx
-
-swig/greene_swig.tag: swig/greene_swig_doc.i
-swig/greene_swig.tag: swig/_greene_swig_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/greene/gnuradio/temp/gr-greene/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating greene_swig.tag"
-	cd /home/greene/gnuradio/temp/gr-greene/build/swig && ./_greene_swig_swig_tag
-	cd /home/greene/gnuradio/temp/gr-greene/build/swig && /usr/bin/cmake -E touch /home/greene/gnuradio/temp/gr-greene/build/swig/greene_swig.tag
-
-swig/greene_swig_doc.i: swig/greene_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/greene/gnuradio/temp/gr-greene/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating greene_swig_doc.i"
-	cd /home/greene/gnuradio/temp/gr-greene/docs/doxygen && /usr/bin/python2 -B /home/greene/gnuradio/temp/gr-greene/docs/doxygen/swig_doc.py /home/greene/gnuradio/temp/gr-greene/build/swig/greene_swig_doc_swig_docs/xml /home/greene/gnuradio/temp/gr-greene/build/swig/greene_swig_doc.i
-
-swig/greene_swig_doc_swig_docs/xml/index.xml: swig/_greene_swig_doc_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/greene/gnuradio/temp/gr-greene/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for greene_swig_doc docs"
-	cd /home/greene/gnuradio/temp/gr-greene/build/swig && ./_greene_swig_doc_tag
-	cd /home/greene/gnuradio/temp/gr-greene/build/swig && /usr/bin/doxygen /home/greene/gnuradio/temp/gr-greene/build/swig/greene_swig_doc_swig_docs/Doxyfile
-
 swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o: swig/CMakeFiles/_greene_swig.dir/flags.make
 swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o: swig/greene_swigPYTHON_wrap.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/greene/gnuradio/temp/gr-greene/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/iaa/gnuradio/gr-greene/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o"
-	cd /home/greene/gnuradio/temp/gr-greene/build/swig && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o -c /home/greene/gnuradio/temp/gr-greene/build/swig/greene_swigPYTHON_wrap.cxx
+	cd /home/iaa/gnuradio/gr-greene/build/swig && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o -c /home/iaa/gnuradio/gr-greene/build/swig/greene_swigPYTHON_wrap.cxx
 
 swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.i"
-	cd /home/greene/gnuradio/temp/gr-greene/build/swig && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/greene/gnuradio/temp/gr-greene/build/swig/greene_swigPYTHON_wrap.cxx > CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.i
+	cd /home/iaa/gnuradio/gr-greene/build/swig && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/iaa/gnuradio/gr-greene/build/swig/greene_swigPYTHON_wrap.cxx > CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.i
 
 swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.s"
-	cd /home/greene/gnuradio/temp/gr-greene/build/swig && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/greene/gnuradio/temp/gr-greene/build/swig/greene_swigPYTHON_wrap.cxx -o CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.s
+	cd /home/iaa/gnuradio/gr-greene/build/swig && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/iaa/gnuradio/gr-greene/build/swig/greene_swigPYTHON_wrap.cxx -o CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.s
 
 swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o.requires:
 .PHONY : swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o.requires
@@ -108,6 +69,39 @@ swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o.provides: swig/CMa
 
 swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o.provides.build: swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o
 
+swig/greene_swigPYTHON_wrap.cxx: /usr/local/include/gnuradio/swig/gnuradio.i
+swig/greene_swigPYTHON_wrap.cxx: /usr/local/include/gnuradio/swig/gr_extras.i
+swig/greene_swigPYTHON_wrap.cxx: ../swig/greene_swig.i
+swig/greene_swigPYTHON_wrap.cxx: /usr/local/include/gnuradio/swig/gr_shared_ptr.i
+swig/greene_swigPYTHON_wrap.cxx: /usr/local/include/gnuradio/swig/gnuradio_swig_bug_workaround.h
+swig/greene_swigPYTHON_wrap.cxx: /usr/local/include/gnuradio/swig/gr_types.i
+swig/greene_swigPYTHON_wrap.cxx: swig/greene_swig.tag
+swig/greene_swigPYTHON_wrap.cxx: ../swig/greene_swig.i
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/iaa/gnuradio/gr-greene/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
+	cd /home/iaa/gnuradio/gr-greene/build/swig && /usr/bin/cmake -E make_directory /home/iaa/gnuradio/gr-greene/build/swig
+	cd /home/iaa/gnuradio/gr-greene/build/swig && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module greene_swig -I/usr/local/include/gnuradio/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/iaa/gnuradio/gr-greene/swig -I/home/iaa/gnuradio/gr-greene/build/swig -outdir /home/iaa/gnuradio/gr-greene/build/swig -c++ -I/home/iaa/gnuradio/gr-greene/lib -I/home/iaa/gnuradio/gr-greene/include -I/home/iaa/gnuradio/gr-greene/build/lib -I/home/iaa/gnuradio/gr-greene/build/include -I/usr/include -I/usr/local/include -I/usr/local/include/gnuradio/swig -I/usr/include/python2.7 -I/home/iaa/gnuradio/gr-greene/swig -I/home/iaa/gnuradio/gr-greene/build/swig -o /home/iaa/gnuradio/gr-greene/build/swig/greene_swigPYTHON_wrap.cxx /home/iaa/gnuradio/gr-greene/swig/greene_swig.i
+
+swig/greene_swig.py: swig/greene_swigPYTHON_wrap.cxx
+
+swig/greene_swig.tag: swig/greene_swig_doc.i
+swig/greene_swig.tag: swig/_greene_swig_swig_tag
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/iaa/gnuradio/gr-greene/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating greene_swig.tag"
+	cd /home/iaa/gnuradio/gr-greene/build/swig && ./_greene_swig_swig_tag
+	cd /home/iaa/gnuradio/gr-greene/build/swig && /usr/bin/cmake -E touch /home/iaa/gnuradio/gr-greene/build/swig/greene_swig.tag
+
+swig/greene_swig_doc.i: swig/greene_swig_doc_swig_docs/xml/index.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/iaa/gnuradio/gr-greene/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating greene_swig_doc.i"
+	cd /home/iaa/gnuradio/gr-greene/docs/doxygen && /usr/bin/python -B /home/iaa/gnuradio/gr-greene/docs/doxygen/swig_doc.py /home/iaa/gnuradio/gr-greene/build/swig/greene_swig_doc_swig_docs/xml /home/iaa/gnuradio/gr-greene/build/swig/greene_swig_doc.i
+
+swig/greene_swig_doc_swig_docs/xml/index.xml: swig/_greene_swig_doc_tag
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/iaa/gnuradio/gr-greene/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for greene_swig_doc docs"
+	cd /home/iaa/gnuradio/gr-greene/build/swig && ./_greene_swig_doc_tag
+	cd /home/iaa/gnuradio/gr-greene/build/swig && /usr/bin/doxygen /home/iaa/gnuradio/gr-greene/build/swig/greene_swig_doc_swig_docs/Doxyfile
+
 # Object files for target _greene_swig
 _greene_swig_OBJECTS = \
 "CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o"
@@ -116,15 +110,15 @@ _greene_swig_OBJECTS = \
 _greene_swig_EXTERNAL_OBJECTS =
 
 swig/_greene_swig.so: swig/CMakeFiles/_greene_swig.dir/greene_swigPYTHON_wrap.cxx.o
-swig/_greene_swig.so: swig/CMakeFiles/_greene_swig.dir/build.make
-swig/_greene_swig.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+swig/_greene_swig.so: /usr/lib/libpython2.7.so
 swig/_greene_swig.so: lib/libgnuradio-greene.so
-swig/_greene_swig.so: /usr/lib/libboost_filesystem.so
-swig/_greene_swig.so: /usr/lib/libboost_system.so
+swig/_greene_swig.so: /usr/lib/libboost_filesystem-mt.so
+swig/_greene_swig.so: /usr/lib/libboost_system-mt.so
 swig/_greene_swig.so: /usr/local/lib/libgnuradio-runtime.so
+swig/_greene_swig.so: swig/CMakeFiles/_greene_swig.dir/build.make
 swig/_greene_swig.so: swig/CMakeFiles/_greene_swig.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module _greene_swig.so"
-	cd /home/greene/gnuradio/temp/gr-greene/build/swig && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_greene_swig.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/iaa/gnuradio/gr-greene/build/swig && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_greene_swig.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 swig/CMakeFiles/_greene_swig.dir/build: swig/_greene_swig.so
@@ -134,7 +128,7 @@ swig/CMakeFiles/_greene_swig.dir/requires: swig/CMakeFiles/_greene_swig.dir/gree
 .PHONY : swig/CMakeFiles/_greene_swig.dir/requires
 
 swig/CMakeFiles/_greene_swig.dir/clean:
-	cd /home/greene/gnuradio/temp/gr-greene/build/swig && $(CMAKE_COMMAND) -P CMakeFiles/_greene_swig.dir/cmake_clean.cmake
+	cd /home/iaa/gnuradio/gr-greene/build/swig && $(CMAKE_COMMAND) -P CMakeFiles/_greene_swig.dir/cmake_clean.cmake
 .PHONY : swig/CMakeFiles/_greene_swig.dir/clean
 
 swig/CMakeFiles/_greene_swig.dir/depend: swig/greene_swigPYTHON_wrap.cxx
@@ -142,6 +136,6 @@ swig/CMakeFiles/_greene_swig.dir/depend: swig/greene_swig.py
 swig/CMakeFiles/_greene_swig.dir/depend: swig/greene_swig.tag
 swig/CMakeFiles/_greene_swig.dir/depend: swig/greene_swig_doc.i
 swig/CMakeFiles/_greene_swig.dir/depend: swig/greene_swig_doc_swig_docs/xml/index.xml
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/greene/gnuradio/temp/gr-greene /home/greene/gnuradio/temp/gr-greene/swig /home/greene/gnuradio/temp/gr-greene/build /home/greene/gnuradio/temp/gr-greene/build/swig /home/greene/gnuradio/temp/gr-greene/build/swig/CMakeFiles/_greene_swig.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/iaa/gnuradio/gr-greene/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/iaa/gnuradio/gr-greene /home/iaa/gnuradio/gr-greene/swig /home/iaa/gnuradio/gr-greene/build /home/iaa/gnuradio/gr-greene/build/swig /home/iaa/gnuradio/gr-greene/build/swig/CMakeFiles/_greene_swig.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : swig/CMakeFiles/_greene_swig.dir/depend
 

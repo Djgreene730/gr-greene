@@ -4,8 +4,8 @@
 lib/CMakeFiles/gnuradio-greene.dir/findMax_vff_impl.cc.o
  ../include/greene/api.h
  ../include/greene/findMax_vff.h
- /home/greene/gnuradio/temp/gr-greene/lib/findMax_vff_impl.cc
- /home/greene/gnuradio/temp/gr-greene/lib/findMax_vff_impl.h
+ /home/iaa/gnuradio/gr-greene/lib/findMax_vff_impl.cc
+ /home/iaa/gnuradio/gr-greene/lib/findMax_vff_impl.h
  /usr/local/include/gnuradio/api.h
  /usr/local/include/gnuradio/attributes.h
  /usr/local/include/gnuradio/basic_block.h

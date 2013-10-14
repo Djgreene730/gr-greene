@@ -35,25 +35,19 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/greene/gnuradio/temp/gr-greene
+CMAKE_SOURCE_DIR = /home/iaa/gnuradio/gr-greene
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/greene/gnuradio/temp/gr-greene/build
+CMAKE_BINARY_DIR = /home/iaa/gnuradio/gr-greene/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,9 +117,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/greene/gnuradio/temp/gr-greene/build/CMakeFiles /home/greene/gnuradio/temp/gr-greene/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/gnuradio/gr-greene/build/CMakeFiles /home/iaa/gnuradio/gr-greene/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/greene/gnuradio/temp/gr-greene/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/gnuradio/gr-greene/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -231,30 +225,30 @@ _greene_swig_swig_tag/fast:
 .PHONY : _greene_swig_swig_tag/fast
 
 #=============================================================================
-# Target rules for targets named pygen_swig_8bef9
+# Target rules for targets named pygen_swig_bec90
 
 # Build rule for target.
-pygen_swig_8bef9: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_swig_8bef9
-.PHONY : pygen_swig_8bef9
+pygen_swig_bec90: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pygen_swig_bec90
+.PHONY : pygen_swig_bec90
 
 # fast build rule for target.
-pygen_swig_8bef9/fast:
-	$(MAKE) -f swig/CMakeFiles/pygen_swig_8bef9.dir/build.make swig/CMakeFiles/pygen_swig_8bef9.dir/build
-.PHONY : pygen_swig_8bef9/fast
+pygen_swig_bec90/fast:
+	$(MAKE) -f swig/CMakeFiles/pygen_swig_bec90.dir/build.make swig/CMakeFiles/pygen_swig_bec90.dir/build
+.PHONY : pygen_swig_bec90/fast
 
 #=============================================================================
-# Target rules for targets named pygen_python_6300e
+# Target rules for targets named pygen_python_e3adb
 
 # Build rule for target.
-pygen_python_6300e: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_python_6300e
-.PHONY : pygen_python_6300e
+pygen_python_e3adb: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pygen_python_e3adb
+.PHONY : pygen_python_e3adb
 
 # fast build rule for target.
-pygen_python_6300e/fast:
-	$(MAKE) -f python/CMakeFiles/pygen_python_6300e.dir/build.make python/CMakeFiles/pygen_python_6300e.dir/build
-.PHONY : pygen_python_6300e/fast
+pygen_python_e3adb/fast:
+	$(MAKE) -f python/CMakeFiles/pygen_python_e3adb.dir/build.make python/CMakeFiles/pygen_python_e3adb.dir/build
+.PHONY : pygen_python_e3adb/fast
 
 #=============================================================================
 # Target rules for targets named pygen_apps_9a6dd
@@ -288,8 +282,8 @@ help:
 	@echo "... _greene_swig"
 	@echo "... _greene_swig_doc_tag"
 	@echo "... _greene_swig_swig_tag"
-	@echo "... pygen_swig_8bef9"
-	@echo "... pygen_python_6300e"
+	@echo "... pygen_swig_bec90"
+	@echo "... pygen_python_e3adb"
 	@echo "... pygen_apps_9a6dd"
 .PHONY : help
 

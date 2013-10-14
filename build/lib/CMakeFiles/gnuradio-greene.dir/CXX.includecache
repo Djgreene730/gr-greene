@@ -16,15 +16,15 @@ greene/api.h
 gnuradio/block.h
 -
 
-/home/greene/gnuradio/temp/gr-greene/lib/findMax_vff_impl.cc
+/home/iaa/gnuradio/gr-greene/lib/findMax_vff_impl.cc
 config.h
-/home/greene/gnuradio/temp/gr-greene/lib/config.h
+/home/iaa/gnuradio/gr-greene/lib/config.h
 gnuradio/io_signature.h
 -
 findMax_vff_impl.h
-/home/greene/gnuradio/temp/gr-greene/lib/findMax_vff_impl.h
+/home/iaa/gnuradio/gr-greene/lib/findMax_vff_impl.h
 
-/home/greene/gnuradio/temp/gr-greene/lib/findMax_vff_impl.h
+/home/iaa/gnuradio/gr-greene/lib/findMax_vff_impl.h
 greene/findMax_vff.h
 -
 

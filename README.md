@@ -2,6 +2,7 @@ gr-greene
 =========
 
 Greene's GNU Radio Blocks
+https://github.com/Djgreene730/gr-greene.git
 
 Title: ~ FindMax_vff ~
 Descr: Finds the max index and value of a vector.

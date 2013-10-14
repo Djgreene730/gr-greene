@@ -31,17 +31,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/greene/gnuradio/temp/gr-greene
+CMAKE_SOURCE_DIR = /home/iaa/gnuradio/gr-greene
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/greene/gnuradio/temp/gr-greene/build
+CMAKE_BINARY_DIR = /home/iaa/gnuradio/gr-greene/build
 
 # Utility rule file for pygen_apps_9a6dd.
 
@@ -59,10 +53,10 @@ apps/CMakeFiles/pygen_apps_9a6dd.dir/build: pygen_apps_9a6dd
 .PHONY : apps/CMakeFiles/pygen_apps_9a6dd.dir/build
 
 apps/CMakeFiles/pygen_apps_9a6dd.dir/clean:
-	cd /home/greene/gnuradio/temp/gr-greene/build/apps && $(CMAKE_COMMAND) -P CMakeFiles/pygen_apps_9a6dd.dir/cmake_clean.cmake
+	cd /home/iaa/gnuradio/gr-greene/build/apps && $(CMAKE_COMMAND) -P CMakeFiles/pygen_apps_9a6dd.dir/cmake_clean.cmake
 .PHONY : apps/CMakeFiles/pygen_apps_9a6dd.dir/clean
 
 apps/CMakeFiles/pygen_apps_9a6dd.dir/depend:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/greene/gnuradio/temp/gr-greene /home/greene/gnuradio/temp/gr-greene/apps /home/greene/gnuradio/temp/gr-greene/build /home/greene/gnuradio/temp/gr-greene/build/apps /home/greene/gnuradio/temp/gr-greene/build/apps/CMakeFiles/pygen_apps_9a6dd.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/iaa/gnuradio/gr-greene/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/iaa/gnuradio/gr-greene /home/iaa/gnuradio/gr-greene/apps /home/iaa/gnuradio/gr-greene/build /home/iaa/gnuradio/gr-greene/build/apps /home/iaa/gnuradio/gr-greene/build/apps/CMakeFiles/pygen_apps_9a6dd.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/CMakeFiles/pygen_apps_9a6dd.dir/depend
 

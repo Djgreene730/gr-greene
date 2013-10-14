@@ -1,4 +1,4 @@
-# Install script for directory: /home/greene/gnuradio/temp/gr-greene/apps
+# Install script for directory: /home/iaa/gnuradio/gr-greene/apps
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

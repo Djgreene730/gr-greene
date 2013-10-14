@@ -31,17 +31,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/greene/gnuradio/temp/gr-greene
+CMAKE_SOURCE_DIR = /home/iaa/gnuradio/gr-greene
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/greene/gnuradio/temp/gr-greene/build
+CMAKE_BINARY_DIR = /home/iaa/gnuradio/gr-greene/build
 
 # Utility rule file for uninstall.
 
@@ -49,7 +43,7 @@ CMAKE_BINARY_DIR = /home/greene/gnuradio/temp/gr-greene/build
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /home/greene/gnuradio/temp/gr-greene/build/cmake_uninstall.cmake
+	/usr/bin/cmake -P /home/iaa/gnuradio/gr-greene/build/cmake_uninstall.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -64,6 +58,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/greene/gnuradio/temp/gr-greene/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/greene/gnuradio/temp/gr-greene /home/greene/gnuradio/temp/gr-greene /home/greene/gnuradio/temp/gr-greene/build /home/greene/gnuradio/temp/gr-greene/build /home/greene/gnuradio/temp/gr-greene/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/iaa/gnuradio/gr-greene/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/iaa/gnuradio/gr-greene /home/iaa/gnuradio/gr-greene /home/iaa/gnuradio/gr-greene/build /home/iaa/gnuradio/gr-greene/build /home/iaa/gnuradio/gr-greene/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

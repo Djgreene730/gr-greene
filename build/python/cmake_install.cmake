@@ -1,4 +1,4 @@
-# Install script for directory: /home/greene/gnuradio/temp/gr-greene/python
+# Install script for directory: /home/iaa/gnuradio/gr-greene/python
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,13 +33,13 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/greene" TYPE FILE FILES "/home/greene/gnuradio/temp/gr-greene/python/__init__.py")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/greene" TYPE FILE FILES "/home/iaa/gnuradio/gr-greene/python/__init__.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/greene" TYPE FILE FILES
-    "/home/greene/gnuradio/temp/gr-greene/build/python/__init__.pyc"
-    "/home/greene/gnuradio/temp/gr-greene/build/python/__init__.pyo"
+    "/home/iaa/gnuradio/gr-greene/build/python/__init__.pyc"
+    "/home/iaa/gnuradio/gr-greene/build/python/__init__.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

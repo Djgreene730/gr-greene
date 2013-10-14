@@ -1,4 +1,4 @@
-# Install script for directory: /home/greene/gnuradio/temp/gr-greene/include/greene
+# Install script for directory: /home/iaa/gnuradio/gr-greene/include/greene
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/greene" TYPE FILE FILES
-    "/home/greene/gnuradio/temp/gr-greene/include/greene/api.h"
-    "/home/greene/gnuradio/temp/gr-greene/include/greene/findMax_vff.h"
+    "/home/iaa/gnuradio/gr-greene/include/greene/api.h"
+    "/home/iaa/gnuradio/gr-greene/include/greene/findMax_vff.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

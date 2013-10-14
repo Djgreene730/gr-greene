@@ -1,20 +1,20 @@
-Start testing: Oct 14 02:50 EDT
+Start testing: Oct 14 03:03 EDT
 ----------------------------------------------------------
 1/1 Testing: test_greene
 1/1 Test: test_greene
-Command: "/bin/sh" "/home/greene/gnuradio/temp/gr-greene/build/lib/test_greene_test.sh"
-Directory: /home/greene/gnuradio/temp/gr-greene/build/lib
-"test_greene" start time: Oct 14 02:50 EDT
+Command: "/bin/sh" "/home/iaa/gnuradio/gr-greene/build/lib/test_greene_test.sh"
+Directory: /home/iaa/gnuradio/gr-greene/build/lib
+"test_greene" start time: Oct 14 03:03 EDT
 Output:
 ----------------------------------------------------------
 
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"test_greene" end time: Oct 14 02:50 EDT
+"test_greene" end time: Oct 14 03:03 EDT
 "test_greene" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 14 02:50 EDT
+End testing: Oct 14 03:03 EDT

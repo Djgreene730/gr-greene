@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/greene/gnuradio/temp/gr-greene/lib/qa_greene.cc
+/home/iaa/gnuradio/gr-greene/lib/qa_greene.cc
 qa_greene.h
-/home/greene/gnuradio/temp/gr-greene/lib/qa_greene.h
+/home/iaa/gnuradio/gr-greene/lib/qa_greene.h
 
-/home/greene/gnuradio/temp/gr-greene/lib/qa_greene.h
+/home/iaa/gnuradio/gr-greene/lib/qa_greene.h
 gnuradio/attributes.h
 -
 cppunit/TestSuite.h
 -
 
-/home/greene/gnuradio/temp/gr-greene/lib/test_greene.cc
+/home/iaa/gnuradio/gr-greene/lib/test_greene.cc
 config.h
-/home/greene/gnuradio/temp/gr-greene/lib/config.h
+/home/iaa/gnuradio/gr-greene/lib/config.h
 cppunit/TextTestRunner.h
 -
 cppunit/XmlOutputter.h
@@ -26,7 +26,7 @@ cppunit/XmlOutputter.h
 gnuradio/unittests.h
 -
 qa_greene.h
-/home/greene/gnuradio/temp/gr-greene/lib/qa_greene.h
+/home/iaa/gnuradio/gr-greene/lib/qa_greene.h
 iostream
 -
 
