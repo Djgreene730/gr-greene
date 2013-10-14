@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_58a2778b101ce8226117901d86f4598b" kind="dir">
+    <compoundname>/home/greene/gnuradio/temp/gr-greene/include/greene</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="findMax__vff_8h">findMax_vff.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/greene/gnuradio/temp/gr-greene/include/greene/"/>
+  </compounddef>
+</doxygen>

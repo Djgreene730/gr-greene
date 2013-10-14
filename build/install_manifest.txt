@@ -1,0 +1,13 @@
+/usr/local/include/greene/api.h
+/usr/local/include/greene/findMax_vff.h
+/usr/local/lib/libgnuradio-greene.so
+/usr/local/lib/python2.7/dist-packages/greene/_greene_swig.so
+/usr/local/lib/python2.7/dist-packages/greene/greene_swig.py
+/usr/local/lib/python2.7/dist-packages/greene/greene_swig.pyc
+/usr/local/lib/python2.7/dist-packages/greene/greene_swig.pyo
+/usr/local/include/greene/greene/swig/greene_swig.i
+/usr/local/include/greene/greene/swig/greene_swig_doc.i
+/usr/local/lib/python2.7/dist-packages/greene/__init__.py
+/usr/local/lib/python2.7/dist-packages/greene/__init__.pyc
+/usr/local/lib/python2.7/dist-packages/greene/__init__.pyo
+/usr/local/share/gnuradio/grc/blocks/greene_findMax_vff.xml

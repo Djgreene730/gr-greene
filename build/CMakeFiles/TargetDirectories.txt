@@ -1,0 +1,9 @@
+/home/greene/gnuradio/temp/gr-greene/build/swig/CMakeFiles/_greene_swig.dir
+/home/greene/gnuradio/temp/gr-greene/build/swig/CMakeFiles/_greene_swig_doc_tag.dir
+/home/greene/gnuradio/temp/gr-greene/build/swig/CMakeFiles/_greene_swig_swig_tag.dir
+/home/greene/gnuradio/temp/gr-greene/build/lib/CMakeFiles/gnuradio-greene.dir
+/home/greene/gnuradio/temp/gr-greene/build/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/home/greene/gnuradio/temp/gr-greene/build/python/CMakeFiles/pygen_python_6300e.dir
+/home/greene/gnuradio/temp/gr-greene/build/swig/CMakeFiles/pygen_swig_8bef9.dir
+/home/greene/gnuradio/temp/gr-greene/build/lib/CMakeFiles/test-greene.dir
+/home/greene/gnuradio/temp/gr-greene/build/CMakeFiles/uninstall.dir

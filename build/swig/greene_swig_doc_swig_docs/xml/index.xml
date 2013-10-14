@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.3.1">
+  <compound refid="classgr_1_1greene_1_1findMax__vff" kind="class"><name>gr::greene::findMax_vff</name>
+    <member refid="classgr_1_1greene_1_1findMax__vff_1ae408111eabb8177cc6a4c8384ee057bd" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1greene_1_1findMax__vff_1a9358b1ab1b77629f87a18619894886fd" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1greene" kind="namespace"><name>gr::greene</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a0193236bc300b6081b44a5ad546c2dbb" kind="define"><name>GREENE_API</name></member>
+  </compound>
+  <compound refid="findMax__vff_8h" kind="file"><name>findMax_vff.h</name>
+  </compound>
+  <compound refid="dir_58a2778b101ce8226117901d86f4598b" kind="dir"><name>/home/greene/gnuradio/temp/gr-greene/include/greene</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/greene/gnuradio/temp/gr-greene/include</name>
+  </compound>
+</doxygenindex>

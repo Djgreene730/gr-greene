@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<block>
+  <name>Find Max</name>
+  <key>greene_findMax_vff</key>
+  <category>Greene</category>
+  <import>import greene</import>
+  <make>greene.findMax_vff($len)</make>
+
+	<param>
+		<name>Vec Length</name>
+		<key>len</key>
+		<value>1</value>
+		<type>int</type>
+	</param>
+
+	<check>$len &gt;= 1</check>
+
+	<sink>
+		<name>In</name>
+		<type>float</type>
+		<vlen>$len</vlen>
+	</sink>
+
+	<source>
+		<name>Value</name>
+		<type>float</type>
+		<vlen>1</vlen>
+		<nports>2</nports>
+	</source>
+
+</block>

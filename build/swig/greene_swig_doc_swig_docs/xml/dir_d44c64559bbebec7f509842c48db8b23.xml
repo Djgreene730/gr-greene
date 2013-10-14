@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>/home/greene/gnuradio/temp/gr-greene/include</compoundname>
+    <innerdir refid="dir_58a2778b101ce8226117901d86f4598b">/home/greene/gnuradio/temp/gr-greene/include/greene</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/greene/gnuradio/temp/gr-greene/include/"/>
+  </compounddef>
+</doxygen>
