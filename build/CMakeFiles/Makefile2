@@ -208,8 +208,8 @@ swig/preinstall:
 
 # All Build rule for target.
 swig/CMakeFiles/_greene_swig.dir/all: lib/CMakeFiles/gnuradio-greene.dir/all
-swig/CMakeFiles/_greene_swig.dir/all: swig/CMakeFiles/_greene_swig_swig_tag.dir/all
 swig/CMakeFiles/_greene_swig.dir/all: swig/CMakeFiles/_greene_swig_doc_tag.dir/all
+swig/CMakeFiles/_greene_swig.dir/all: swig/CMakeFiles/_greene_swig_swig_tag.dir/all
 	$(MAKE) -f swig/CMakeFiles/_greene_swig.dir/build.make swig/CMakeFiles/_greene_swig.dir/depend
 	$(MAKE) -f swig/CMakeFiles/_greene_swig.dir/build.make swig/CMakeFiles/_greene_swig.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/iaa/gnuradio/gr-greene/build/CMakeFiles  1 2 3 4 5
@@ -314,8 +314,8 @@ clean: swig/CMakeFiles/_greene_swig_swig_tag.dir/clean
 # Target rules for target swig/CMakeFiles/pygen_swig_bec90.dir
 
 # All Build rule for target.
-swig/CMakeFiles/pygen_swig_bec90.dir/all: swig/CMakeFiles/_greene_swig_swig_tag.dir/all
 swig/CMakeFiles/pygen_swig_bec90.dir/all: swig/CMakeFiles/_greene_swig_doc_tag.dir/all
+swig/CMakeFiles/pygen_swig_bec90.dir/all: swig/CMakeFiles/_greene_swig_swig_tag.dir/all
 	$(MAKE) -f swig/CMakeFiles/pygen_swig_bec90.dir/build.make swig/CMakeFiles/pygen_swig_bec90.dir/depend
 	$(MAKE) -f swig/CMakeFiles/pygen_swig_bec90.dir/build.make swig/CMakeFiles/pygen_swig_bec90.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/iaa/gnuradio/gr-greene/build/CMakeFiles  11 12 13 14 15 16

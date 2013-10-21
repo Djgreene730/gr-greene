@@ -64,30 +64,31 @@ namespace gr {
                        gr_vector_void_star &output_items)
     {
         // Setup Outputs
-		float *max_value = (float *) output_items[0];
+	float *max_value = (float *) output_items[0];
         float *max_index = (float *) output_items[1];
-		
+
         // Do <+signal processing+>
         for(int i = 0; i < noutput_items; i++) {
-        
-			// Set first value as max
-			float value = ((const float *) input_items[0])[0];
-			int search_index = 0;
-			
-			// Search for next max
-			for (int index = 1; index < d_len; index++)
-				if (((const float *) input_items[0])[index] > value) {
-					value = ((const float *) input_items[0])[index];
-					search_index = index;
-				}
-				
-			// Set output values	
-			*max_value++ = value;
-			*max_index++ = search_index;
+
+		// Set first value as max
+		float value = ((const float *) input_items[0])[0];
+		int search_index = 0;
+
+		// Search for next max
+		for (int index = 1; index < d_len; index++)
+			if (((const float *) input_items[0])[index] > value) {
+				value = ((const float *) input_items[0])[index];
+				search_index = index;
+			}
+
+		// Set output values
+		*max_value++ = value;
+		*max_index++ = search_index;
 
 		}
-		
+
         // Tell runtime system how many output items we produced.
+	consume_each(noutput_items);
         return noutput_items;
     }
 
